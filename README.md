@@ -54,7 +54,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@esm/index.mjs';
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.0-esm/index.mjs';
 ```
 
 #### isScalarMostlySafeCompatible( value, dtype )
@@ -101,7 +101,7 @@ bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@esm/index.mjs';
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.0-esm/index.mjs';
 
 // Determine whether a decimal value can be cast to various data types...
 logEachMap( '%f => %s: %s', 3.14, dtypes(), isScalarMostlySafeCompatible );
