@@ -54,6 +54,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible/tags). For example,
+
+```javascript
 import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.0-deno/mod.js';
 ```
 
@@ -96,7 +101,7 @@ bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.0-deno/mod.js';
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@deno/mod.js';
 
 // Determine whether a decimal value can be cast to various data types...
 logEachMap( '%f => %s: %s', 3.14, dtypes(), isScalarMostlySafeCompatible );
