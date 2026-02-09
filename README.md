@@ -54,6 +54,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible/tags). For example,
+
+```javascript
 import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.1-esm/index.mjs';
 ```
 
@@ -101,7 +106,7 @@ bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@v0.1.1-esm/index.mjs';
+import isScalarMostlySafeCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-scalar-mostly-safe-compatible@esm/index.mjs';
 
 // Determine whether a decimal value can be cast to various data types...
 logEachMap( '%f => %s: %s', 3.14, dtypes(), isScalarMostlySafeCompatible );
