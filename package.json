@@ -52,7 +52,8 @@
     "@stdlib/ndarray-base-dtype-resolve-str": "^0.3.1",
     "@stdlib/ndarray-base-min-signed-integer-dtype": "^0.1.1",
     "@stdlib/ndarray-min-dtype": "^0.3.1",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/complex-float64-ctor": "^0.1.2",
