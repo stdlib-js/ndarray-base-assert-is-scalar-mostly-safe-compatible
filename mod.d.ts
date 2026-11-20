@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,31 +16,34 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { DataType } from '@stdlib/types/ndarray';
 
 /**
-* Determine whether a scalar value can be safely cast or, for floating-point data types, downcast to specified ndarray data type.
+* Returns a boolean indicating whether a scalar value can be safely cast or, for floating-point data types, downcast to specified ndarray data type.
 *
-* @module @stdlib/ndarray-base-assert-is-scalar-mostly-safe-compatible
+* @param value - scalar value
+* @param dtype - ndarray data type
+* @returns boolean indicating whether a scalar value can be safely cast
 *
 * @example
-* var isScalarMostlySafeCompatible = require( '@stdlib/ndarray-base-assert-is-scalar-mostly-safe-compatible' );
-*
 * var bool = isScalarMostlySafeCompatible( 3.0, 'float64' );
 * // returns true
 *
-* bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
+* @example
+* var bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
 * // returns false
 *
-* bool = isScalarMostlySafeCompatible( -1, 'uint32' );
+* @example
+* var bool = isScalarMostlySafeCompatible( -1, 'uint32' );
 * // returns false
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function isScalarMostlySafeCompatible( value: unknown, dtype: DataType ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = isScalarMostlySafeCompatible;
